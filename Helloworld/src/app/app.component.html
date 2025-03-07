@@ -1,8 +1,3 @@
-<h1>{{ title }}</h1>
-<img [src]="imgUrl" alt="BridgeLabz Logo" width="200"><br><br>
-
-<!-- Button with Event Binding -->
-<button (click)="onButtonClick()">Click Me</button>
-
-<!-- Display message after button click -->
-<p>{{ userClickMessage }}</p>
+<!-- No need for form tag, but this ensures everything is correct -->
+<input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+<p>Your name: {{ userName }}</p>
